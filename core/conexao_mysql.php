@@ -18,7 +18,8 @@ function conecta() :mysqli
     return $conexao;
 
 }
-function desconecta($conexao){
+function desconecta(mysqli $conexao) : void
+{
     mysqli_close($conexao);
 }
 ?>
